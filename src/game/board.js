@@ -8,8 +8,12 @@ const Board = (props) => (
     <div>
       {
         props.board.map((row, key) => {
-          return `${row}${key}`
-        });
+          return (
+            <div>
+              {row}
+            </div>
+          )
+        })
       }
     </div>
   </div>
