@@ -5,13 +5,20 @@ import './App.css';
 // components
 import Board from './game/board.js';
 
-
-function App() {
-  return (
-    <div>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      board : [
+        [0,0,0,0]
+      ]
+    }
+  }
+  render() {
+    return (
       <Board />
-    </div>
-  );
+    )
+  }
 }
 
 export default App;
